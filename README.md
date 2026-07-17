@@ -123,8 +123,6 @@ MichkaMC is source-available, not open source.
 - Commercial use requires a separate paid license from the copyright holder. Contact: https://michkamc.org
 - Third-party libraries remain under their own licenses; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Their notices must be preserved when redistributing.
 
-Because this is a non-OSI, copyleft-incompatible license, please do not submit contributions derived from GPL or other copyleft projects. If contributions are accepted in future, a contributor license agreement will be required so commercial dual-licensing remains possible.
-
 ## Author
 
 Michael DALLA RIVA, https://michkamc.org
