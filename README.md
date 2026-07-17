@@ -16,8 +16,6 @@ Source‑available · Non‑commercial · Android 8.0+ · Kotlin + Jetpack Compo
 
 MichkaMC ("Michka Mail &amp; Chat") is a privacy‑first Android client that puts your email, private messaging, calendar, to‑dos and contacts in one app — and keeps all of it encrypted at rest with a key that only you can unlock. The chat is fully end‑to‑end encrypted and routes through a **zero‑knowledge relay** you can self‑host, so no server ever sees your messages.
 
-No emojis anywhere — the UI uses clean vector icons only. Material 3, dark and light themes, 60 fps Compose UI.
-
 ## Features
 
 ### 📧 Email
