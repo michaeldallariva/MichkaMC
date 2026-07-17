@@ -1,5 +1,5 @@
 A secure, modern email client with IMAP, POP3 and SMTP support and an integrated username-only chat
 
-<img width="627" height="627" alt="Image" src="https://github.com/user-attachments/assets/c0ba9cb1-2c7f-4b19-8ebd-0415824502ed" />
+<img width="1254" height="1254" alt="Image" src="https://github.com/user-attachments/assets/56ab7104-fe6d-431b-b114-0f22417497c9" />
 
 
