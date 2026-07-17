@@ -131,3 +131,12 @@ Michael DALLA RIVA, https://michkamc.org
 
 Copyright (c) 2026 Michael DALLA RIVA. All rights reserved.
 
+<img width="469" height="1060" alt="Image" src="https://github.com/user-attachments/assets/61cc07d0-b804-48b0-b354-862606b7a48a" />
+
+<img width="473" height="1058" alt="Image" src="https://github.com/user-attachments/assets/e5fea576-9135-4172-b5a8-7655781c438d" />
+
+<img width="477" height="1066" alt="Image" src="https://github.com/user-attachments/assets/52679605-2180-4cd3-a2d0-65fecfd8c3f6" />
+
+<img width="482" height="1062" alt="Image" src="https://github.com/user-attachments/assets/a7ed4e10-4b6d-4987-899a-a537b0d33d30" />
+
+
