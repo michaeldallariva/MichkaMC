@@ -2,7 +2,7 @@
 
 # MichkaMC (Mail and Chat)
 
-**A secure Android app that unites a full email client, end-to-end-encrypted username-only chat, calendar, to-dos and contacts, with everything encrypted on the device.**
+**A secure Android app that unites a full email client, end-to-end-encrypted chat, calendar, to-dos, contacts and a secure vault, with everything encrypted on the device.**
 
 Source-available | Non-commercial | Android 8.0+ | Kotlin and Jetpack Compose
 
@@ -14,7 +14,9 @@ Source-available | Non-commercial | Android 8.0+ | Kotlin and Jetpack Compose
 
 ## What it is
 
-MichkaMC (Michka Mail and Chat) is a privacy-first Android client that puts your email, private messaging, calendar, to-dos and contacts in one app, and keeps all of it encrypted at rest with a key only you can unlock. The chat is fully end-to-end encrypted and routes through a zero-knowledge relay you can self-host, so no server ever sees your messages. The interface is Material 3 with light and dark themes and a smooth Compose UI.
+MichkaMC (Michka Mail and Chat) is a privacy-first Android client that puts your email, private messaging, calendar, to-dos, contacts and a secure password vault in one app, and keeps all of it encrypted at rest with a key only you can unlock. Email can be end-to-end encrypted with OpenPGP, and the chat is fully end-to-end encrypted and routes through a zero-knowledge relay you can self-host, so no server ever sees your messages. The interface is Material 3 with light and dark themes and a smooth Compose UI.
+
+A companion **desktop app for Windows and Linux** is also available, adding a rich notes workspace and sharing the same encryption and the same chat relay, so it interoperates with the Android app.
 
 ## Features
 
@@ -22,10 +24,12 @@ MichkaMC (Michka Mail and Chat) is a privacy-first Android client that puts your
 
 - Multi-account IMAP, POP3 and SMTP (up to 10 accounts), with TLS/STARTTLS enforced and server identity checked.
 - Real autodiscovery: provider autoconfig, Thunderbird ISPDB, and DNS SRV over DNS-over-HTTPS, with a sensible fallback.
-- OAuth2 sign-in for Gmail, Outlook and Yahoo, plus password and app-password authentication.
+- OAuth2 sign-in for Google and Microsoft, plus password and app-password authentication for other providers.
+- End-to-end encrypted email with OpenPGP: encrypt and sign outgoing mail so not even your provider can read it, with automatic key exchange (Autocrypt and Web Key Directory) and fingerprint verification.
 - Collapsible per-account navigation with nested folders (Inbox, Sent, Drafts, Spam, Trash, Archive and custom folders) and unread counts, with strong per-account isolation.
 - Message reader that shows plain text by default, a per-message HTML toggle, and blocks remote images until you allow them (defeats tracking pixels).
 - Compose, reply, reply-all and forward, with attachments (send, download and open; up to 100 MB per email), drafts, and a copy of sent mail filed to your Sent folder.
+- Mail rules, search, and an offline outbox that queues and retries when you are offline.
 - New-mail notifications with an optional sound and ephemeral, never-stored previews.
 
 ### Chat (end-to-end encrypted)
@@ -37,12 +41,13 @@ MichkaMC (Michka Mail and Chat) is a privacy-first Android client that puts your
 - Encrypted local chat history, delete a conversation or a single message, and block a sender.
 - Your chosen display name travels inside the encrypted body, so contacts see your name without the relay ever learning it.
 
-### Calendar, To-do and Contacts
+### Calendar, To-do, Contacts and Vault
 
 - Local calendar with a month grid, per-day events, all-day toggle, start and end date and time, location and notes.
-- To-dos and notes with due dates and a done state.
-- Contacts with manual create, edit and delete, vCard (.vcf) import, and long-press to email a contact.
-- All three work with no email account configured.
+- To-dos with due dates and a done state.
+- Contacts with manual create, edit and delete, vCard (.vcf) import and export, and long-press to email a contact.
+- A secure vault for passwords and private notes, protected by a second, separate passphrase, with each item encrypted under its own key on top of the encrypted database.
+- All of these work with no email account configured.
 
 ### Security and privacy
 
@@ -103,7 +108,7 @@ On Windows PowerShell, point Gradle at a JDK first if it cannot find a compiler:
 $env:JAVA_HOME = "C:\Program Files\Android\Android Studio\jbr"
 ```
 
-To enable OAuth2 for Gmail, Outlook or Yahoo, add your own OAuth client IDs as build config fields; otherwise the app uses password or app-password authentication.
+To enable OAuth2 for Google or Microsoft, add your own OAuth client IDs as build config fields; otherwise the app uses password or app-password authentication.
 
 ## Self-hosting the chat relay
 
@@ -125,9 +130,9 @@ MichkaMC is source-available, not open source.
 
 ## Author
 
-Michael DALLA RIVA, https://michkamc.org
+Janeway and Wildman Limited, United Kingdom, https://michkamc.org
 
-Copyright (c) 2026 Michael DALLA RIVA. All rights reserved.
+Copyright (c) 2026 Janeway and Wildman Limited - United Kingdom. All rights reserved.
 
 <img width="469" height="1060" alt="Image" src="https://github.com/user-attachments/assets/61cc07d0-b804-48b0-b354-862606b7a48a" />
 
